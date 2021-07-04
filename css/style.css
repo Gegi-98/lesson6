@@ -16,6 +16,25 @@
 	right: 720px;
 	transform: rotate(270deg);
 }
+.battery {
+	position: absolute;
+	width: 15px;
+	height: 38px;
+	background-color: red;
+	top: 86px;
+	right: 722px;
+	transform: rotate(180deg);
+	animation: battery  3s ease infinite; 
+}
+@keyframes battery {
+	0% {
+		width:  15px;
+		background-color:red;
+	}
+	100% {width:  40px;
+		background-color:  green;
+	}
+}
 .wave {
 	width: 100px;
 	height: 100px;
@@ -113,23 +132,23 @@
 	transform: translateY(550px);
 	transition: all 5s 20.05s;
 }
-.battery {
+.tetris6 {
+	width: 40px;
+	height: 40px;
+	background-color: green;
 	position: absolute;
-	width: 15px;
-	height: 38px;
-	background-color: red;
-	top: 86px;
-	right: 722px;
-	transform: rotate(180deg);
-	animation: battery  3s ease infinite; 
-	
+	top: 150px;
+	right: 800px;
+	transform: translateY(510px);
+	transition: all 5s 25s;
 }
-@keyframes battery {
-	0% {
-		width:  15px;
-		background-color:red;
-	}
-	100% {width:  40px;
-		background-color:  green;
-	}
+.tetris7 {
+	width: 80px;
+	height: 20px;
+	background-color: red;
+	position: absolute;
+	top: 150px;
+	right: 730px;
+	transform: translateY(490px);
+	transition: all 5s 30s;
 }
